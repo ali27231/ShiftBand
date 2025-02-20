@@ -1,0 +1,357 @@
+.features-hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url('https://your-features-image.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.features-hero-content {
+    max-width: 800px;
+    padding: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.features-hero h1 {
+    font-size: 3.5rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.features-hero p {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2rem;
+}
+
+/* Main Features Section */
+.main-features {
+    padding: 5rem 2rem;
+    background: #1a1a1a;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-box {
+    background: #1e1e1e;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 123, 255, 0.1);
+    border-radius: 50%;
+    color: #007bff;
+}
+
+.feature-box h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature-box p {
+    color: #aaa;
+    line-height: 1.6;
+}
+
+/* Advanced Features Section */
+.advanced-features {
+    padding: 5rem 2rem;
+    background: #1e1e1e;
+}
+
+.advanced-features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.advanced-feature-card {
+    background: #1a1a1a;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.feature-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.feature-content {
+    padding: 2rem;
+}
+
+.feature-content h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature-content p {
+    color: #aaa;
+    line-height: 1.6;
+}
+
+/* Integration Section */
+.integration-section {
+    padding: 5rem 2rem;
+    background: #1a1a1a;
+}
+
+.integration-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.integration-text h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.integration-text p {
+    color: #aaa;
+    margin-bottom: 2rem;
+}
+
+.integration-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.integration-text ul li {
+    color: #fff;
+    margin-bottom: 1rem;
+    padding-right: 2rem;
+    position: relative;
+}
+
+.integration-text ul li::before {
+    content: '✓';
+    position: absolute;
+    right: 0;
+    color: #007bff;
+}
+
+.integration-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Support Section */
+.support-section {
+    padding: 5rem 2rem;
+    background: #1e1e1e;
+    text-align: center;
+}
+
+.support-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.support-icon {
+    color: #007bff;
+    margin-bottom: 2rem;
+}
+
+.support-content h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.support-content p {
+    color: #aaa;
+    margin-bottom: 2rem;
+}
+
+.support-button {
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.support-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+/* Animation Classes */
+.slide-up {
+    animation: slideUp 0.6s ease forwards;
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease forwards;
+}
+
+.scale-in {
+    animation: scaleIn 0.6s ease forwards;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Hover Effects */
+.hover-glow {
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-glow::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(0,123,255,0.1), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.6s;
+}
+
+.hover-glow:hover::after {
+    transform: translateX(100%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .features-hero p {
+        font-size: 1.2rem;
+    }
+
+    .integration-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .integration-text h2 {
+        font-size: 2rem;
+    }
+
+    .support-content h2 {
+        font-size: 2rem;
+    }
+
+    .feature-box {
+        transform: none;
+    }
+
+    .advanced-feature-card {
+        margin: 0 1rem;
+    }
+}
+
+/* Section Title Styles */
+.section-title {
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: #007bff;
+    border-radius: 3px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #007bff;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0056b3;
+}
