@@ -41,7 +41,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  git init
+
   "eslintConfig": {
     "extends": [
       "react-app",
