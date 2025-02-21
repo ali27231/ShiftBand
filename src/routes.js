@@ -27,6 +27,7 @@ import Features from './pages/Features';
 import AboutUs from './pages/AboutUs';
 import AboutMe from "./pages/AboutMe";
 import AboutMeFa from "./pages/AboutMeFa";
+import NotFound from "./pages/NotFound";
 import { CircularProgress, Box } from '@mui/material';
 const PrivateRoute = ({ children, requireAdmin = false }) => {
     const { user, loading } = useAuth();
@@ -75,6 +76,7 @@ const AppRoutes = () => {
             <Route path="/aboutus" element={<AboutUs />} />
             <Route path="/aboutme" element={<AboutMe />} />
             <Route path="/aboutme/fa" element={<AboutMeFa />} />
+            <Route path="*" element={<NotFound />} />
             <Route
                 path="/dashboard"
                 element={
